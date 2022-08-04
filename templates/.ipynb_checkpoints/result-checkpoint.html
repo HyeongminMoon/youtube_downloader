@@ -1,0 +1,32 @@
+
+<h1>Youtube Audio Extractor</h1>
+
+{% if audio_file %}
+<p> original:</p>
+<audio controls>
+    <source src={{audio_file}} type="audio/wav">
+</audio>
+{% endif %}
+
+{% if shifted_file %}
+<p> shifted_file:</p>
+<audio controls>
+    <source src={{shifted_file}} type="audio/wav">
+</audio>
+{% endif %}
+
+{% if instrument %}
+<p> instrument:</p>
+<audio controls>
+    <source src={{instrument}} type="audio/wav">
+</audio>
+{% endif %}
+
+{% if voice %}
+<p> voice:</p>
+<audio controls>
+    <source src={{voice}} type="audio/wav">
+</audio>
+{% endif %}
+
+
